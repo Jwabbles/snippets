@@ -1,0 +1,37 @@
+[user]
+	email = james.walsh@onthebeach.co.uk
+	name = James Walsh
+[color]
+	ui = auto
+[filter "media"]
+	clean = git media clean %f
+	smudge = git media smudge %f
+	required = true
+[alias]
+	a = add
+	p = push
+	po = push origin 
+	l = log
+	s = status
+	d = diff
+	cm = commit -m
+	ma = commit -am
+	br = branch	
+	co = checkout
+	cob = checkout -b 
+	ra = remote add
+	rr = remote rm
+	pu = pull
+	cl = clone
+	f = fetch 
+
+[format]
+        pretty = "Commit:  %C(yellow)%H%nAuthor:  %C(green)%aN <%aE>%nDate:    (%C(red)%ar%Creset) %ai%nSubject: %s%n%n%b"
+[core]
+	editor = /usr/bin/vim
+	excludesfile = /Users/jameswalsh/.gitignore_global
+[push]
+	default = simple
+
+[gc]
+	auto = 0
